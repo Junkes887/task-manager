@@ -5,7 +5,7 @@ import './styles.css'
 const Header = () => {
     return (
         <div className="container">
-            <h1>Gerenciador de tarefas</h1>
+            <h1>Task Manager</h1>
         </div>
     )
 }
