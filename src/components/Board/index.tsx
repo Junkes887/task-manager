@@ -26,12 +26,11 @@ const Board = () => {
     const [statusSelected, setStatusSelected] = useState(Number)
     
     useEffect(() =>{
-        // api.get("status").then(response => {
-        //     console.log(response.data)
-        //     setStatus(response.data)
-        //     setList(response.data)
-        // })
-        console.log('Url do backend: ' + process.env.REACT_APP_API_URL)
+        api.get("status").then(response => {
+            console.log(response.data)
+            setStatus(response.data)
+            setList(response.data)
+        })
     },[])
 
     function validations(idNewStatus: number, idOldSatus: number, idTask: number) {
