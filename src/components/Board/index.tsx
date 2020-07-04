@@ -27,7 +27,7 @@ const Board = () => {
     
     useEffect(() =>{
         api.get("status").then(response => {
-            console.log(response)
+            console.log(response.data)
             setStatus(response.data)
             setList(response.data)
         })
