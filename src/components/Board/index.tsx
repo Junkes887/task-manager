@@ -25,13 +25,13 @@ const Board = () => {
     const [list, setList] = useState<Status[]>([])
     const [statusSelected, setStatusSelected] = useState(Number)
     
-    useEffect(() =>{
-        api.get("status").then(response => {
-            console.log(response.data)
-            setStatus(response.data)
-            setList(response.data)
-        })
-    },[])
+    // useEffect(() =>{
+    //     api.get("status").then(response => {
+    //         console.log(response.data)
+    //         setStatus(response.data)
+    //         setList(response.data)
+    //     })
+    // },[])
 
     function validations(idNewStatus: number, idOldSatus: number, idTask: number) {
         if(status.filter(i => i.id === idNewStatus)[0] === null) {
