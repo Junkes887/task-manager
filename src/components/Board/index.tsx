@@ -31,7 +31,7 @@ const Board = () => {
         //     setStatus(response.data)
         //     setList(response.data)
         // })
-        console.log('Url do backend: '+process.env.APP_TASK_API_URL)
+        console.log('Url do backend: ' + process.env.REACT_APP_API_URL)
     },[])
 
     function validations(idNewStatus: number, idOldSatus: number, idTask: number) {
